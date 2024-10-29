@@ -9,10 +9,20 @@ const Navbar = () => {
           <img className="mx-2 w-10" src={logo} alt="logo" />
         </div>
         <div className="flex space-x-4 items-center justify-between text-2xl ">
-          <FaLinkedin className="text-white hover:text-gray-400" />
-          <FaGithub className="text-white hover:text-gray-400" />
-          <FaInstagram className="text-white hover:text-gray-400" />
-          <FaFacebook className="text-white hover:text-gray-400" />
+          <a 
+          href="https://www.linkedin.com/in/kantinan-paritvisut-835019302/">
+             <FaLinkedin className="text-white hover:text-gray-400" />
+          </a>
+          <a href="https://github.com/kantinanpew"> 
+            <FaGithub className="text-white hover:text-gray-400" />
+          </a>
+          <a href = "https://www.instagram.com/kantinanpew/">
+            <FaInstagram className="text-white hover:text-gray-400" />
+          </a>
+          <a href="https://www.facebook.com/kantinan.paritvisut/">
+            <FaFacebook className="text-white hover:text-gray-400" />
+          </a>
+          
         </div>
       </nav>
     </>

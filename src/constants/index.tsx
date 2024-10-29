@@ -1,8 +1,9 @@
 import login from "../assets/teaflow/loginpage.jpeg";
 
-export const HERO_CONTENT = `--`;
+export const HERO_CONTENT = `I am currently a junior at Dong Hwa University in Taiwan, majoring in Computer Science and Information Engineering. Through dedicated efforts, I have maintained a cumulative GPA of 4.14 ranking 2nd in my class. I’m particularly interested in front-end development`;
 
-export const ABOUT_TEXT = `-- `;
+export const ABOUT_TEXT = `I have also developed some front-end projects where I focused on creating intuitive and responsive designs using HTML, CSS, React and React Native.  My friends and I  just won competition in the Meet Pacific Hualien Start-up Festival 2024, We created a mobile app(Tea flow) to make farm management easier for tea farmers. With a built-in map it helps farmers navigate their fields and monitor crops remotely using drones. The app provides real-time updates on crop yields and uses AI to spot pests and diseases early. From planting to pest control and harvesting, our app supports every step of the tea farming process.
+Recently, I am working on a project to build a computer vision system for interpreting American Sign Language which deepened my knowledge of machine learning and user-focused design.`;
 export const EXPERIENCES = [
   {
     year: "--",
