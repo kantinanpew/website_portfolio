@@ -1,4 +1,4 @@
-
+import login from "../assets/teaflow/loginpage.jpeg";
 
 export const HERO_CONTENT = `--`;
 
@@ -33,11 +33,18 @@ export const EDUCATION =[
 export const PROJECTS = [
 
   {
-    title: "Tea ",
-    //image: project2,
+    title: "Tea flow",
+    image: login,
     description:
       "This mobile application is a comprehensive solution designed to streamline the management of tea farms. It offers a range of features including real-time data management, and field monitoring. Developed using React Native and Firebase, the app provides cross-platform functionality to assist farm managers in making informed decisions based on live data.",
     technologies: ["React Native", "Firebase"],
+  },
+  {
+    title: "Photography website",
+    image: login,
+    description:
+      "This mobile application is a comprehensive solution designed to streamline the management of tea farms. It offers a range of features including real-time data management, and field monitoring. Developed using React Native and Firebase, the app provides cross-platform functionality to assist farm managers in making informed decisions based on live data.",
+    technologies: ["React ", "Framemotion"],
   },
  
 ];
