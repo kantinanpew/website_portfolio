@@ -1,9 +1,11 @@
 import {CONTACT} from "../constants";
-
+import {motion} from "framer-motion";
 const contact = () => {
   return (
     <div className = "border-b border-b-neutral-900 pb-20">
-      <h1 className = " my-10 text-center text-4xl"></h1>
+      <motion.h1 
+      
+      className = " my-10 text-center text-3xl text-gray-700"> Contact</motion.h1>
       <div className ="text-center tracking-tighter">
         <p className = "my-4">{CONTACT.address}</p>
         <p className = "my-4">{CONTACT.phoneNo}</p>
