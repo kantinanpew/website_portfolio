@@ -1,39 +1,60 @@
-import logo from "../assets/react.svg";
 import { FaLinkedin, FaGithub, FaInstagram, FaFacebook } from "react-icons/fa";
 
-
-
-const handleLinkClick =(event) =>{
-
-  event.preventDefault();
-  window.open(event.target.href, "_blank","noopener,noreferrer");
-}
-
 const Navbar = () => {
+  // Optional: If you want to use the handleLinkClick function, uncomment this and add it to the anchor tags.
+  /*
+  const handleLinkClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    window.open(event.currentTarget.href, "_blank", "noopener,noreferrer");
+  };
+  */
+
+  // Social media links data
+  const socialLinks = [
+    {
+      href: "https://www.linkedin.com/in/kantinan-paritvisut-835019302/",
+      icon: <FaLinkedin className="text-white hover:text-gray-400" />,
+      label: "LinkedIn",
+    },
+    {
+      href: "https://github.com/kantinanpew",
+      icon: <FaGithub className="text-white hover:text-gray-400" />,
+      label: "GitHub",
+    },
+    {
+      href: "https://www.instagram.com/kantinanpew/",
+      icon: <FaInstagram className="text-white hover:text-gray-400" />,
+      label: "Instagram",
+    },
+    {
+      href: "https://www.facebook.com/kantinan.paritvisut/",
+      icon: <FaFacebook className="text-white hover:text-gray-400" />,
+      label: "Facebook",
+    },
+  ];
+
   return (
-    <>
-      <nav className=" mb-20 flex justify-between items-center py-6 px-4 z-12">
-        <div className="flex-shrink-0 items-center">
-          
-        </div>
-        <div className="flex space-x-4 items-center justify-between text-2xl ">
-          <a rel ="noopener noreferrer" href="https://www.linkedin.com/in/kantinan-paritvisut-835019302/" target="_blank">
-             <FaLinkedin className="text-white hover:text-gray-400" />
+    <nav className="mb-20 flex justify-between items-center py-6 px-4 z-10">
+      {/* Placeholder for logo or branding */}
+      <div className="flex-shrink-0 items-center">
+        {/* Add your logo or branding here */}
+      </div>
+
+      {/* Social media links */}
+      <div className="flex space-x-4 items-center justify-between text-2xl">
+        {socialLinks.map((link, index) => (
+          <a
+            key={index}
+            rel="noopener noreferrer"
+            href={link.href}
+            target="_blank"
+            aria-label={link.label}
+          >
+            {link.icon}
           </a>
-          <a rel ="noopener noreferrer" href="https://github.com/kantinanpew " target="_blank"> 
-            <FaGithub className="text-white hover:text-gray-400" />
-          </a>
-          <a rel ="noopener noreferrer"href = "https://www.instagram.com/kantinanpew/" target="_blank">
-            
-            <FaInstagram className="text-white hover:text-gray-400"  />
-          </a>
-          <a rel ="noopener noreferrer" href="https://www.facebook.com/kantinan.paritvisut/" target="_blank">
-            <FaFacebook className="text-white hover:text-gray-400" />
-          </a>
-          
-        </div>
-      </nav>
-    </>
+        ))}
+      </div>
+    </nav>
   );
 };
 
